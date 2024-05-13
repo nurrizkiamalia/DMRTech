@@ -10,10 +10,10 @@ const NavList: React.FC<classnaming> = ({className}) =>{
     return(
         <>
             <ul className={`${className} font-dmSans text-pLg font-light`}>
-                <Link href="/" className={styleLink}><li>Home</li></Link>
-                <Link href="/About" className={styleLink}><li>About Us</li></Link>
-                <Link href="/ServiceCompany" className={styleLink}><li>Our Services</li></Link>
-                <Link href="/Team" className={styleLink}><li>Team</li></Link>
+                <li><Link href="/" className={styleLink}>Home</Link></li>
+                <li><Link href="/About" className={styleLink}>About Us</Link></li>
+                <li><Link href="/ServiceCompany" className={styleLink}>Our Services</Link></li>
+                <li><Link href="/Team" className={styleLink}>Team</Link></li>
             </ul>
         </>
     )

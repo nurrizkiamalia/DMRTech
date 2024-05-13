@@ -6,7 +6,7 @@ import ServiceOverview from "./components/ServiceOverview";
 import Testimonials from "./components/Testimonials";
 
 export default function Home() {
-  const bgStyle = "bg-fixed bg-cover bg-center bg-no-repeat bg-blend-darken h-[200px] w-full"
+  const bgStyle = "bg-dspGray h-[200px] w-full"
 
 
   return (
@@ -14,9 +14,9 @@ export default function Home() {
         <Hero />
         
         <CompanyOverview />
-        <div className={`bg-imgDivider2 ${bgStyle}`}></div>
+        <div className={`${bgStyle}`}></div>
         <ServiceOverview />
-        <div className={`bg-imgDivider3 ${bgStyle}`}></div>
+        <div className={`${bgStyle}`}></div>
         <Testimonials />
     </div>
   );

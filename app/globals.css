@@ -10,7 +10,6 @@ html, body{
 
 html{
     scroll-behavior: smooth;
-    scrollbar-color: #4045C1;
     scrollbar-width: thin;
 }
 

@@ -5,7 +5,7 @@ import RightContentCompany from "./components/RightContentCompany"
 const CompanyOverview: React.FC = () =>{
     return(
         <>
-            <TwoContent className="gap-10 my-20 max-xl:flex max-xl:flex-col-reverse">
+            <TwoContent className="gap-10 my-20">
                 <LeftContentCompany />
                 <RightContentCompany />
             </TwoContent>

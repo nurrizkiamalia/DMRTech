@@ -11,7 +11,7 @@ const StatisticCompany: React.FC<statisticProps> = ({className}) =>{
     const iconStyle = "bg-dspGray p-5 rounded-full w-fit"
     const iconBoxStyle="flex flex-col items-center justify-center hover:scale-110 transition-all ease duration-800"
     return(
-        <div className={` flex items-center justify-center gap-20 max-md:gap-10 ${className}`}>
+        <div className={` flex bg-dspLightGray text-black items-center justify-center gap-20 max-md:gap-10 ${className}`}>
             <div className={iconBoxStyle}>
                 <div className={iconStyle}>
                     <Image 
@@ -20,7 +20,7 @@ const StatisticCompany: React.FC<statisticProps> = ({className}) =>{
                         width={20}
                     />
                 </div>
-                <h3 className="font-dmBricolage max-md:text-pXXL max-sm:text-pXL text-heading3">$180M</h3>
+                <h3 className="font-dmBricolage text-heading3 max-md:text-pXXL max-sm:text-pXL">$180M</h3>
                 <p className="text-pMd  font-raleway">#Profit</p>
             </div>
             <div className={iconBoxStyle}>

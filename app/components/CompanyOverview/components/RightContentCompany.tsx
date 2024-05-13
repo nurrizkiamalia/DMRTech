@@ -15,7 +15,7 @@ const RightContentCompany: React.FC = () => {
                 <div>
                     <div className="font-raleway my-10">
                         <div className="flex items-center justify-between  bg-dspGray py-3 px-[30px] rounded-t-3xl ">
-                            <p className="text-pXXL max-md:text-pXL max-sm:text-lg">About Us</p>
+                            <p className="text-pXXL max-md:text-pXL max-sm:text-lg font-semibold">About Us</p>
                         </div>
                         <div className= {` text-black text-pLg bg-dspLightGray py-[22px] px-[30px] rounded-b-3xl `}>
                             <p className="line-clamp-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dicta nulla dolore amet, itaque quasi ad eligendi quas ipsam consectetur earum esse, totam ex impedit! Architecto, consequatur accusantium? Quibusdam recusandae sequi non nobis architecto enim possimus voluptates optio labore quae natus, omnis magnam aspernatur accusantium fugiat cumque error, sapiente qui.</p>
