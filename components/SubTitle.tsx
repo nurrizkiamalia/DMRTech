@@ -5,7 +5,7 @@ interface SubtitleProps{
 
 const SubTitle: React.FC<SubtitleProps> = ({className, children}) =>{
     return(
-        <span className={`text-pLg font-bold bg-dspPurple px-[30px] py-1 rounded-full max-md:text-pMd ${className}`}>{children} </span>
+        <span className={`capitalize text-pLg font-bold bg-dspPurple px-[30px] py-1 rounded-full max-md:text-pMd ${className}`}>{children} </span>
     )
 }
 

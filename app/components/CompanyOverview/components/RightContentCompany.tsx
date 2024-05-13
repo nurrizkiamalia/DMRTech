@@ -1,8 +1,4 @@
-"use client";
-
-import { useState } from "react"
 import ButtonLearnMore from "./ButtonLearnMore"
-import companyoverviewdata from "@/data/companyoverviewdata";
 import SubTitle from "@/components/SubTitle";
 
 const RightContentCompany: React.FC = () => {

@@ -2,7 +2,6 @@ import Image from "next/image"
 import teaming1 from "@/public/assets/team-img4.webp"
 import teaming2 from "@/public/assets/team-img5.webp"
 
-
 const LeftContentCompany: React.FC = () => {
 
     const imgStyle = " transition-all ease h-[500px] object-cover rounded-3xl hover:scale-105"

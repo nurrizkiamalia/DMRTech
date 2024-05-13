@@ -9,28 +9,28 @@ const SocialIcon: React.FC = () => {
     return(
         <>
             <div className="flex gap-5 max-lg:gap-2 ">
-                <Link href={"/"}>
+                <Link href={"http://gmail.com"}>
                     <Image 
                         src={email}
                         alt="email"
                         className="max-lg:w-[60%] hover:scale-90"
                     />
                 </Link>
-                <Link href={"/"}>
+                <Link href={"http://twitter.com"}>
                     <Image 
                         src={twitter}
                         alt="twitter"
                         className="max-lg:w-[60%] hover:scale-90"
                     />
                 </Link>
-                <Link href={"/"}>
+                <Link href={"http://whatsapp.com"}>
                     <Image 
                         src={whatsapp}
                         alt="whatsapp"
                         className="max-lg:w-[60%] hover:scale-90"
                     />
                 </Link>
-                <Link href={"/"}>
+                <Link href={"http://instagram.com"}>
                     <Image 
                         src={instagram}
                         alt="instagram"

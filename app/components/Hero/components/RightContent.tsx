@@ -1,10 +1,9 @@
-import bgImg from '@/public/assets/bg-hero.png'
-import heroBgBlue from '@/public/assets/hero-img-bg-blue.png'
-import heroWebImg from '@/public/assets/hero-img-web.png'
-import heroImgChat from '@/public/assets/hero-img-chat.png'
-import heroImgChart from '@/public/assets/hero-img-chart.png'
+import bgImg from '@/public/assets/bg-hero.webp'
+import heroBgBlue from '@/public/assets/hero-img-bg-blue.webp'
+import heroWebImg from '@/public/assets/hero-img-web.webp'
+import heroImgChat from '@/public/assets/hero-img-chat.webp'
+import heroImgChart from '@/public/assets/hero-img-chart.webp'
 import Image from 'next/image'
-import imgHeading from "@/public/assets/heading-img.png"
 
 const RightContentHero: React.FC = () => {
 
@@ -19,26 +18,11 @@ const RightContentHero: React.FC = () => {
                     src={bgImg} 
                     alt="background"
                     className='relative'
-                    priority={false}
                     />
-
-                    {/* <span className="absolute mb-5 top-0 left-0 flex gap-5 max-md:gap-0 w-fit items-center ">
-                            <span className="">
-                                <Image 
-                                src={imgHeading}
-                                alt="Image"
-                                className="rounded-full"
-                                />
-                                <span className="bg-dspBlack w-fit absolute top-0 right-0 mt-1 mr-1 px-8 rounded-full text-heading3 cursor-context-menu ">
-                                    <p className="">🚀</p>
-                                </span>
-                            </span>
-                        </span> */}
                     <div className='flex items-center justify-center'>
                     <Image 
                         src={heroBgBlue} 
                         alt="background"
-                        priority={false}
                         className={` bottom-10 ${imgStyle} max-md:w-[80%]`} 
                     />
                     <Image 

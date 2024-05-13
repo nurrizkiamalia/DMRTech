@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-dspBlack overflow-x-hidden w-screen" suppressHydrationWarning={true}>
-      <body className={`${dmSans.variable} ${bricolage.variable} ${raleway.variable} text-white`}>
+      <body className={`${dmSans.variable} ${bricolage.variable} ${raleway.variable} text-white`} suppressHydrationWarning={true}>
         <MainHeader />
         <SocialMedia />
         {children}
