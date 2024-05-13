@@ -10,7 +10,7 @@ export default function Home() {
 
 
   return (
-    <div className="relative bg-black bg-opacity-50">
+    <div className="relative bg-opacity-50">
         <Hero />
         
         <CompanyOverview />
