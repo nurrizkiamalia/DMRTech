@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-dspBlack overflow-x-hidden w-screen">
+    <html lang="en" className="bg-dspBlack overflow-x-hidden w-screen" suppressHydrationWarning={true}>
       <body className={`${dmSans.variable} ${bricolage.variable} ${raleway.variable} text-white`}>
         <MainHeader />
         <SocialMedia />

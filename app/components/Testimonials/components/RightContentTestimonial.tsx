@@ -10,7 +10,7 @@ const RightContentTestimonial: React.FC = () => {
         <>
             <div>
                 <div className="flex max-lg:flex-col max-lg:gap-7 max-xl:h-fit max-xl:justify-start max-xl:items-start justify-center gap-3 items-start h-[726px] relative">
-                    <div className="card-testimonial h-[726px] max-xl:h-fit gap-5 overflow-y-scroll overflow-x-hidden cursor-all-scroll ">
+                    <div className="card-testimonial h-[726px] max-xl:h-fit gap-5 overflow-y-scroll max-xl:overflow-y-visible overflow-x-hidden cursor-all-scroll ">
                         <CardTestimonial data={leftData} percentage={100} />
                     </div>
                     <div className="card-testimonial h-[726px] max-xl:h-fit gap-5 overflow-y-scroll overflow-x-hidden cursor-all-scroll ">

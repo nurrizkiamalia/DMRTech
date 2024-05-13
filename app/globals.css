@@ -23,22 +23,6 @@ html{
     line-height: 120%;
 }
 
-.company .img-1{
-    background-image: url("../public/assets/team-img4.webp");
-    background-position: left;
-}
-
-.company .img-2{
-    background-image: url("../public/assets/team-img5.webp");
-    background-position: right;
-}
-
-.company .img-1, .company .img-2{
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: contain;
-}
-
 .content-service-overview{
     scroll-behavior: smooth;
     scrollbar-width: thin;
