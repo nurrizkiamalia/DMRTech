@@ -10,12 +10,9 @@ const LeftContentHero: React.FC = () => {
                 <SubTitle className="max-xl:self-center">#1 web development service</SubTitle>
                 <div>
 
-                    <h1 className="text-heading1 max-lg:text-heading2 max-sm:text-heading3 font-dmBricolage capitalize tracking-tight font-medium leading-snug max-xl:text-center">
-                        <span className=" border-[1px] border-white  shadow-lg shadow-gray-600 w-fit mr-3 px-8 rounded-full  cursor-context-menu ">
+                    <h1 className="text-heading1 max-lg:text-heading2 max-sm:text-heading3 font-dmBricolage capitalize tracking-tight font-semibold leading-snug max-xl:text-center">
                             🚀 
-                        </span>
-                         Let's Build the  
-                        <span className="heading-span hover:drop-shadow-xl font-extrabold hover:not-italic italic mx-2 hover:scale-110 tracking-normal cursor-pointer text-[90px] ml-5 max-md:ml-0 max-lg:text-heading2 max-md:text-heading3">Fastest</span> website 
+                         Let's Build the Fastest website 
                     </h1>
                 </div>
                 <p className="font-raleway max-xl:mr-0 mr-[10%]  mb-10 max-lg:mt-5 max-lg:mb-7 max-xl:text-center text-pLg">—Like a speed of light, we can make your website faster and fully optimized to be access in every device, everywhere, everytime.</p>
