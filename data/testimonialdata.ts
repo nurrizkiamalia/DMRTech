@@ -1,0 +1,50 @@
+export default [
+   {
+    avatar: "testimonial1.jpg",
+    name: "Raymond",
+    job: "Business Man",
+    testimonial: "What we can do to help you achieve the best performance for  your business website.",
+    linkedin:"http://linkedin.com",
+    twitter: "http://twitter.com/raymond",
+   },
+   {
+    avatar: "testimonial2.jpg",
+    name: "Reina",
+    job: "Digital Marketer",
+    testimonial: "What we can do to help you achieve the best performance for  your business website.",
+    linkedin:"http://linkedin.com",
+    twitter: "http://twitter.com/reina",
+   }, 
+   {
+    avatar: "testimonial3.jpg",
+    name: "Donna",
+    job: "Skincare Business Owner",
+    testimonial: "What we can do to help you achieve the best performance for  your business website.",
+    linkedin:"http://linkedin.com",
+    twitter: "http://twitter.com/donna",
+   }, 
+   {
+    avatar: "testimonial4.jpg",
+    name: "Merri",
+    job: "BBQ Shop Owner",
+    testimonial: "What we can do to help you achieve the best performance for  your business website.",
+    linkedin:"http://linkedin.com",
+    twitter: "http://twitter.com/merri",
+   }, 
+   {
+    avatar: "testimonial5.jpg",
+    name: "Althan",
+    job: "Dealer Shop Owner",
+    testimonial: "What we can do to help you achieve the best performance for  your business website.",
+    linkedin:"http://linkedin.com",
+    twitter: "http://twitter.com/althan",
+   },
+   {
+    avatar: "testimonial6.jpg",
+    name: "Rizki",
+    job: "Gold Mine Owner",
+    testimonial: "What we can do to help you achieve the best performance for  your business website.",
+    linkedin:"http://linkedin.com",
+    twitter: "http://twitter.com/Rizki",
+   }
+]
