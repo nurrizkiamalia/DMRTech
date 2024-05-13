@@ -11,9 +11,9 @@ const config: Config = {
       backgroundImage: {
         'radial-gradient': 'radial-gradient(169.40% 89.55% at 94.76% 6.29%, rgba(64, 69, 193, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%)',
         underlineBg: "linear-gradient(180deg,rgba(255,255,255,0) 70%, #4045C1 30%)",
-        'imgDivider1': "url('/assets/img-divider1.jpg')",
-        'imgDivider2': "url('/assets/img-divider2.jpg')",
-        'imgDivider3': "url('/assets/img-divider3.jpg')",
+        'imgDivider1': "url('/assets/img-divider1.webp')",
+        'imgDivider2': "url('/assets/img-divider2.webp')",
+        'imgDivider3': "url('/assets/img-divider3.webp')",
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",

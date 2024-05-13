@@ -21,7 +21,15 @@ const CardTestimonial: React.FC<CardTestimonialProps> = ({ data, percentage }) =
             {visibleData.map((item) => {
                 return(
                     <div className="w-[288px] max-xl:w-full flex flex-col gap-2 my-10 first:mt-0 last:mb-0 border-[3px] border-white bg-dspBlack py-[24px] px-[30px] rounded-3xl" key={item.name}>
-                        <div className="w-[100px] h-[100px] bg-dspLightGray rounded-full self-center mb-5 "><img src={`assets/${item.avatar}`} alt="icon" className="bg-dspBlack p-5 rounded-full" /></div>
+                        <div className="w-[100px] h-[100px] bg-dspLightGray rounded-full self-center mb-5 ">
+                            <Image 
+                                src={`/assets/${item.avatar}`}
+                                alt="avatar"
+                                width={140}
+                                height={140}
+                                className=" bg-dspBlack p-5 rounded-full"
+                            />    
+                        </div>
                             <p className="font-dmBricolage text-pLg font-semibold">—{item.name}</p>
                             <p className="font-dmBricolage text-pSm italic mb-6 ">{item.job}</p>
                             <hr />
@@ -46,7 +54,7 @@ const CardTestimonial: React.FC<CardTestimonialProps> = ({ data, percentage }) =
                             </div>
                         </div>
                     )
-                })}
+            })}
         </>
     )
 }

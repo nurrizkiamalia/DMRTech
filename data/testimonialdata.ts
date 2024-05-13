@@ -1,6 +1,6 @@
 export default [
    {
-    avatar: "testimonial1.jpg",
+    avatar: "testimonial1.webp",
     name: "Raymond",
     job: "Business Man",
     testimonial: "What we can do to help you achieve the best performance for  your business website.",
@@ -8,7 +8,7 @@ export default [
     twitter: "http://twitter.com/raymond",
    },
    {
-    avatar: "testimonial2.jpg",
+    avatar: "testimonial2.webp",
     name: "Reina",
     job: "Digital Marketer",
     testimonial: "What we can do to help you achieve the best performance for  your business website.",
@@ -16,7 +16,7 @@ export default [
     twitter: "http://twitter.com/reina",
    }, 
    {
-    avatar: "testimonial3.jpg",
+    avatar: "testimonial3.webp",
     name: "Donna",
     job: "Skincare Business Owner",
     testimonial: "What we can do to help you achieve the best performance for  your business website.",
@@ -24,7 +24,7 @@ export default [
     twitter: "http://twitter.com/donna",
    }, 
    {
-    avatar: "testimonial4.jpg",
+    avatar: "testimonial4.webp",
     name: "Merri",
     job: "BBQ Shop Owner",
     testimonial: "What we can do to help you achieve the best performance for  your business website.",
@@ -32,7 +32,7 @@ export default [
     twitter: "http://twitter.com/merri",
    }, 
    {
-    avatar: "testimonial5.jpg",
+    avatar: "testimonial5.webp",
     name: "Althan",
     job: "Dealer Shop Owner",
     testimonial: "What we can do to help you achieve the best performance for  your business website.",
@@ -40,7 +40,7 @@ export default [
     twitter: "http://twitter.com/althan",
    },
    {
-    avatar: "testimonial6.jpg",
+    avatar: "testimonial6.webp",
     name: "Rizki",
     job: "Gold Mine Owner",
     testimonial: "What we can do to help you achieve the best performance for  your business website.",

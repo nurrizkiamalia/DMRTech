@@ -25,12 +25,12 @@ html{
 }
 
 .company .img-1{
-    background-image: url("../public/assets/team-img4.jpg");
+    background-image: url("../public/assets/team-img4.webp");
     background-position: left;
 }
 
 .company .img-2{
-    background-image: url("../public/assets/team-img5.jpg");
+    background-image: url("../public/assets/team-img5.webp");
     background-position: right;
 }
 
