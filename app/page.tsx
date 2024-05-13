@@ -6,11 +6,11 @@ import ServiceOverview from "./components/ServiceOverview";
 import Testimonials from "./components/Testimonials";
 
 export default function Home() {
-  const bgStyle = "bg-dspGray h-[200px] w-full"
+  const bgStyle = "bg-dspGray h-[200px] w-full max-lg:h-[100px]"
 
 
   return (
-    <div className="relative  bg-black bg-opacity-50">
+    <div className="relative bg-black bg-opacity-50">
         <Hero />
         
         <CompanyOverview />

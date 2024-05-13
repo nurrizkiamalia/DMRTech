@@ -5,24 +5,24 @@ import teaming2 from "@/public/assets/team-img5.webp"
 
 const LeftContentCompany: React.FC = () => {
 
-    const imgStyle = "hover:scale-110 transition-all ease "
+    const imgStyle = " transition-all ease h-[500px] object-cover rounded-3xl hover:scale-105"
 
     return(
         <>
-            <div className="company grid grid-cols-2 gap-5 w-full max-xl:flex max-xl:flex-col ">
-                <div className={`img-1 ${imgStyle}`}>
+            <div className="company grid grid-cols-2 gap-5 w-full h-fit max-xl:flex max-xl:flex-col ">
+                <div className={`img-1 overflow-hidden rounded-3xl`}>
                 <Image 
                     src={teaming1}
                     alt="team"
-                    className="h-[500px] object-cover rounded-3xl"
+                    className={imgStyle}
                     priority
                 />
                 </div>
-                <div className={`img-2 ${imgStyle}`}>
+                <div className={`img-2 overflow-hidden rounded-3xl`}>
                 <Image 
                     src={teaming2}
                     alt="team"
-                    className="h-[500px] object-cover rounded-3xl"
+                    className={imgStyle}
                     priority
                 />
                 </div>

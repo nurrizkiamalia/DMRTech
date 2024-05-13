@@ -6,7 +6,7 @@ import Link from "next/link"
 const Footer: React.FC = () =>{
     return(
         <>
-            <div className=" border-t-2 border-white flex flex-col gap-5 p-20 pb-5 bg-black max-xl:py-10 max-xl:px-14 max-lg:py-10 max-lg:px-10 max-sm:px-5">
+            <div className=" z-10 border-t-2 border-white flex flex-col gap-5 p-20 pb-5 bg-black max-xl:py-10 max-xl:px-14 max-lg:py-10 max-lg:px-10 max-sm:px-5">
                 <div className="footer grid grid-cols-6 max-xl:grid-cols-3 gap-14 max-lg:grid-cols-1 ">
                     <div className="h-fit max-xl:w-screen col-start-1 col-span-2 max-xl:col-start-1 max-xl:col-end-2 max-lg:col-start-1 flex flex-col gap-[35px] max-lg:gap-5 ">
                         <Image src={logo} alt="" />
