@@ -46,7 +46,7 @@ const ServiceDetails: React.FC = () => {
               </div>
               <div className="z-10 py-10 relative w-full h-full flex flex-col items-center justify-start">
                 <div className="font-raleway text-left px-4 max-w-4xl flex flex-col gap-5">
-                  <h3 className="text-white text-center text-pXL md:text-pXXL xl:text-heading3 font-bold mb-4 border-2 p-3 rounded-3xl border-dspLimeGreen w-full">
+                  <h3 className="text-white text-center text-pXL md:text-pXXL xl:text-heading3 font-bold mb-4 border-2 p-3 rounded-3xl border-dspWhite w-full">
                     {item.service}
                   </h3>
                   <p className="text-pMd md:text-pLg text-dspLightGray mb-4">

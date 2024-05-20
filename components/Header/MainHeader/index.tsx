@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Logo } from "../Logo"
 import NavList from "../NavList"
 import ResponsiveHeader from "../ResponsiveHeader"
@@ -11,7 +12,7 @@ const MainHeader: React.FC = () =>{
                         <Logo />
                     </div>
                     <NavList className=" hidden xl:flex justify-self-center gap-[35px] items-center justify-center " />
-                    <button className="hidden xl:block justify-self-end py-[11px] px-12 border-white border-[1px] rounded-3xl shadow-lg shadow-dspGray hover:scale-105 transition-all ease ">Get Started</button>
+                    <Link href='/ServiceCompany/#pricing' className="hidden xl:block justify-self-end py-[11px] px-12 border-white border-[1px] rounded-3xl shadow-lg shadow-dspGray hover:scale-105 transition-all ease ">Get Started</Link>
                     <ResponsiveHeader className="xl:hidden flex" />
                 </div>
             </div>
