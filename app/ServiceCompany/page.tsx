@@ -1,14 +1,16 @@
-import Pricing from "./components/Pricing"
-import ProjectShowcase from "./components/ProjectShowcase"
-import ServiceDescription from "./components/ServiceDescription"
+import Testimonials from "../components/Testimonials"
+import Pricing from "./components/Pricing/Pricing"
+import ProjectShowcase from "./components/ProjectShowcase/ProjectShowcase"
+import ServiceDescription from "./components/ServiceDescription/ServiceDescription"
 
 const ServiceCompany: React.FC = () => {
     return (
         <>
-            <div>
+            <div className="service">
                <ServiceDescription />
                <ProjectShowcase />
                <Pricing />
+               <Testimonials />
             </div>
         </>
     )

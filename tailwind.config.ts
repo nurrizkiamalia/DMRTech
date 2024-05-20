@@ -21,8 +21,8 @@ const config: Config = {
         raleway: ["var(--font-raleway)"]
       },
       fontSize: {
-        heading1: "80px",
-        heading2: "60px",
+        heading1: "65px",
+        heading2: "50px",
         heading3: "45px",
         pXXL: "25px",
         pXL: "20px",
@@ -41,7 +41,10 @@ const config: Config = {
       },
       boxShadow: {
         blurShdw: "shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]",
-        cardShdw: "shadow-card"
+        cardShdw: "shadow-card",
+        shadowStripe: "rgba(40,40,40, 0.25) 0px 54px 55px, rgba(40,40,40, 0.12) 0px -12px 30px, rgba(40,40,40, 0.12) 0px 4px 6px, rgba(40,40,40, 0.17) 0px 12px 13px, rgba(40,40,40, 0.09) 0px -3px 5px",
+        liteShadow: "rgba(0, 0, 0, 0.05) 0px 0px 5px -2px",
+        bottomShadow: " rgba(0, 0, 0, 0.45) 0px 5px 20px -10px"
       },
       dropShadow: {
         light: "drop-shadow([0.5px, 0.5px,  1px] rgba(255, 255, 255, 0.5))",

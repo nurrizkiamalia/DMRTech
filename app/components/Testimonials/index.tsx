@@ -5,10 +5,12 @@ import RightContentTestimonial from "./components/RightContentTestimonial"
 const Testimonials: React.FC = () => {
     return(
         <>
-            <TwoContent className="!py-0 max-xl:!py-10">
-                <LeftContentTestimonial />
+            <div className="flex flex-col py-14">
+                <div className="xl:px-20 lg:px-14 md:px-10 px-5 mb-5">
+                    <LeftContentTestimonial />
+                </div>
                 <RightContentTestimonial />
-            </TwoContent>
+            </div>
         </>
     )
 }

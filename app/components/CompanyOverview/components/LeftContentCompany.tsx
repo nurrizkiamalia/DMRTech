@@ -1,30 +1,26 @@
 import Image from "next/image"
-import teaming1 from "@/public/assets/team-img4.webp"
-import teaming2 from "@/public/assets/team-img5.webp"
+import companyoverviewdata from "@/data/companyoverviewdata"
 
 const LeftContentCompany: React.FC = () => {
 
-    const imgStyle = " transition-all ease h-[500px] object-cover rounded-3xl hover:scale-105"
-
     return(
         <>
-            <div className="company grid grid-cols-2 gap-5 w-full h-fit max-xl:flex max-xl:flex-col ">
-                <div className={`img-1 overflow-hidden rounded-3xl`}>
-                <Image 
-                    src={teaming1}
-                    alt="team"
-                    className={imgStyle}
-                    priority
-                />
-                </div>
-                <div className={`img-2 overflow-hidden rounded-3xl`}>
-                <Image 
-                    src={teaming2}
-                    alt="team"
-                    className={imgStyle}
-                    priority
-                />
-                </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 font-raleway gap-5">
+                {companyoverviewdata.map((item, index) => (
+                    
+                    <div key={index} className="flex flex-col gap-5 bg-dspBlack p-5 rounded-3xl items-start">
+                        <h3 className="text-pXXL font-semibold font-dmBricolage ">{item.title}</h3>
+                        <p className="line-clamp-3 text-pMd font-light text-dspLightGray">{item.description} </p>
+                        <Image 
+                            src={`/assets/${item.image}`}
+                            alt="team"
+                            width={1000}
+                            height={200}
+                            className="h-[200px] object-cover object-center rounded-3xl "
+                        />
+                        <button className=" -mt-16 rounded-full self-end py-5 px-3 bg-dspBlack "><i className="ri-arrow-right-up-line hover:bg-dspLimeGreen text-black text-heading3 p-5 bg-white rounded-full"></i></button>
+                    </div>
+                ))}
             </div>
         </>
     )

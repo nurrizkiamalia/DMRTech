@@ -1,8 +1,8 @@
 "use client";
 
+import SocialMedia from "@/components/SocialMedia";
 import NavList from "../NavList"
 import { useState } from "react"
-import SocialIcon from "@/components/SocialMedia/SocialIcon";
 
 interface ResponsiveProps{
     className?: string
@@ -25,13 +25,13 @@ const ResponsiveHeader: React.FC<ResponsiveProps> = ({className}) =>{
                 </div>
 
             {menuShow && (
-                <div className="menu-open p-[60px] pl-[97px] z-99 h-svh right-0 top-0 w-[50vw] max-md:w-[100%] bg-dspBlack hover:bg-dspPurple border-l-[3px] border-white hover:text-white flex flex-col items-start fixed justify-between ">
+                <div className="menu-open px-5 xl:px-[60px] xl:pl-[97px] z-99 h-screen right-0 top-0 md:w-[50vw] w-screen bg-dspBlack hover:bg-dspPurple border-l-[3px] border-white hover:text-white flex flex-col items-start fixed justify-between ">
                     <button className=" hover:bg-dspLimeGreen hover:text-black self-end border-2 border-offwhite px-8 py-5 rounded-full cursor-pointer hover:bg-offwhite hover:shadow-lg hover:shadow-gray " onClick={handleMenuOpen}>x</button>
                     <div className="menu-nav">
-                        <NavList className=" flex flex-col -mt-10 !text-heading3 max-md:!text-pXXL" />
+                        <NavList onClick={handleMenuOpen} className=" flex flex-col -mt-10 text-pXXL md:text-[30px] lg:text-heading3 " />
                     </div>
                     <div className="menu-contact">
-                        <SocialIcon />
+                        <SocialMedia />
                     </div>
                 </div>
             )}

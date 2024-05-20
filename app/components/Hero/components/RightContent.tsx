@@ -1,52 +1,69 @@
-import bgImg from '@/public/assets/bg-hero.webp'
-import heroBgBlue from '@/public/assets/hero-img-bg-blue.webp'
-import heroWebImg from '@/public/assets/hero-img-web.webp'
-import heroImgChat from '@/public/assets/hero-img-chat.webp'
-import heroImgChart from '@/public/assets/hero-img-chart.webp'
+"use client";
+
 import Image from 'next/image'
+import image4 from '@/public/assets/team-img4.webp'
+import image5 from '@/public/assets/team-img5.webp'
+import { useState } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import { Navigation } from 'swiper/modules'
+
+const images = [
+    image4,
+    image5,
+    image4,
+];
 
 const RightContentHero: React.FC = () => {
+    const [openIndex, setOpenIndex] = useState<number | null>(null)
 
-    const imgStyle = "absolute hover:scale-110 transition-all ease"
+    const handleClickImage = (index: number) => {
+        setOpenIndex(prevIndex => prevIndex === index ? null : index)
+    }
 
-    return(
-        <div className=' flex justify-center items-start'>
-            <div className='w-fit'>
-                
-                <div className='relative w-fit'>
+    return (
+        <div className='h-full flex items-center justify-center'>
+            <div className='relative hidden xl:flex h-full w-full gap-3 items-stretch justify-between'>
+                {images.map((src, index) => (
+                    <div
+                    key={index}
+                    onClick={() => handleClickImage(index)}
+                    className={` relative ${openIndex === index ? "xl:w-full" : "xl:w-[40%]"} hover:w-full transition-all duration-300 ease-in-out rounded-3xl`}
+                    >
                     <Image 
-                    src={bgImg} 
-                    alt="background"
-                    className='relative'
-                    />
-                    <div className='flex items-center justify-center'>
-                    <Image 
-                        src={heroBgBlue} 
-                        alt="background"
-                        className={` bottom-10 ${imgStyle} max-md:w-[80%]`} 
-                    />
-                    <Image 
-                        src={heroWebImg} 
-                        alt="web"
-                        className={` bottom-14 ${imgStyle} max-md:w-[70%]`} 
-                    />
-                    <Image 
-                        src={heroImgChart} 
-                        alt="chart"
-                        className={`bottom-20 -right-10 ${imgStyle} max-md:w-[30%]`} 
-                    />
-                    <Image 
-                        src={heroImgChat} 
-                        alt="chat"
-                        className={`bottom-5 left-0 ${imgStyle} max-md:w-[30%]`} 
+                        src={src} 
+                        alt={`image-${index}`}
+                        className=' object-cover rounded-3xl'
+                        layout='fill'
                     />
                 </div>
-                </div>
-                
-                
+                ))}
+            </div>
+
+            {/* Mobile */}
+            <div className='xl:hidden w-full'>
+                <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                    {images.map((src, index) => (
+                        <SwiperSlide key={index} className='text-white'>
+                            <div
+                                onClick={() => handleClickImage(index)}
+                                className="relative w-full rounded-3xl overflow-hidden"
+                                style={{ height: '300px' }}
+                            >
+                                <Image 
+                                    src={src} 
+                                    alt={`image-${index}`}
+                                    className='object-cover rounded-3xl hover:scale-110 transition-all ease-linear'
+                                    layout='fill'
+                                />
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </div>
     )
 }
 
-export default RightContentHero
+export default RightContentHero;

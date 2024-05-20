@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
 
 html, body{
     margin: 0;
@@ -18,14 +17,18 @@ html{
     color: #C3FF62;
 }
 
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: white;
+}
+
 .heading-span{
     background: linear-gradient(180deg,rgba(255,255,255,0) 65%, #1f1f1f 35%);
     line-height: 120%;
 }
 
-.content-service-overview{
+.content-service-overview , .team-box{
     scroll-behavior: smooth;
-    scrollbar-width: thin;
+    scrollbar-width: none;
 }
 
 .card-testimonial{
@@ -40,6 +43,40 @@ html{
 .card-box > div {
     animation: scroll 24s linear infinite;
 }
+
+.vertical-marquee {
+    display: flex;
+    flex-direction: column;
+    animation: verticalScroll 35s linear infinite;
+}
+
+.team .swiper-pagination{
+    background-color: #1f1f1f;
+    width: fit-content!important;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative!important;
+    margin-top: 2vh;
+}
+
+.swiper-pagination-bullet{
+    background: #C3FF62!important;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active{
+    background: #4045C1!important;
+}
+
+@keyframes verticalScroll {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
 
 @keyframes scroll {
     0% {

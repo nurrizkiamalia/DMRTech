@@ -1,15 +1,22 @@
-import AboutUs from "./components/AboutUs"
-import CompanyCulture from "./components/CompanyCulture"
-import OurBenefit from "./components/OurBenefit"
+import StatisticCompany from "@/components/StatisticCompany"
+import AboutUs from "./components/AboutUs/AboutUs"
+import CompanyCulture from "./components/CompanyCulture/CompanyCulture"
+import Milestone from "./components/Milestone"
 import OurTeam from "./components/OurTeam"
+import VisionMission from "./components/VisionMission"
 
 const About: React.FC = () =>{
     return(
         <>
+        <div className="about font-raleway">
+            
             <AboutUs />
-            <OurBenefit />
+            <StatisticCompany />
+            <VisionMission />
+            <Milestone />
             <OurTeam />
             <CompanyCulture />
+        </div>
         </>
     )
 }

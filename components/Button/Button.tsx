@@ -1,6 +1,4 @@
 import { MouseEventHandler, ReactNode } from "react"
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 
 interface BtnProps{
     onCLick?: MouseEventHandler<HTMLButtonElement>;
@@ -11,10 +9,11 @@ interface BtnProps{
 const Button: React.FC<BtnProps> = ({ onCLick, className, children}) => {
     return (
         <>
-            <button onClick={onCLick} className={` btn w-fit font-dmSans text-pLg max-sm:text-pMd font-bold flex items-center gap-[14px] py-[6px] pl-[30px] pr-2 border-[1px] border-white rounded-full hover:bg-white hover:text-dspBlack hover:border-dspLimeGreen ${className}`}> 
+            <button onClick={onCLick} className={` btn w-fit font-dmSans md:text-pLg text-pMd font-bold flex items-center gap-[14px] py-[6px] pl-[30px] pr-2 border-[1px] border-white rounded-full hover:scale-110 transition-all ease-in-out hover:text-dspLimeGreen hover:border-dspLimeGreen ${className}`}> 
                 {children}
-                <FontAwesomeIcon icon={faArrowRightLong} className="icon bg-dspLimeGreen text-dspBlack p-2 text-pXL rounded-full  " />
+                <i className="ri-arrow-right-up-line icon bg-dspLimeGreen text-dspBlack px-2 py-1 text-pXL rounded-full  " />
             </button>
+            
         </>
     )
 }

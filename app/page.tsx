@@ -1,22 +1,25 @@
 import Hero from "./components/Hero"
-import Image from "next/image";
-import planet from "@/public/assets/Planet.png"
 import CompanyOverview from "./components/CompanyOverview";
 import ServiceOverview from "./components/ServiceOverview";
 import Testimonials from "./components/Testimonials";
+import TaglineBanner from "@/components/TaglineBanner";
+import PartnerBanner from "@/components/PartnerBanner";
 
 export default function Home() {
-  const bgStyle = "bg-dspGray h-[200px] w-full max-lg:h-[100px]"
-
-
   return (
-    <div className="relative bg-opacity-50">
+    <div className="home">
         <Hero />
-        
+        <div className="xl:-rotate-3 ">
+          <TaglineBanner  />
+        </div>
         <CompanyOverview />
-        <div className={`${bgStyle}`}></div>
+        <div className="xl:rotate-3">
+          <PartnerBanner />
+        </div>
         <ServiceOverview />
-        <div className={`${bgStyle}`}></div>
+        <div className="xl:-rotate-3 ">
+          <TaglineBanner  />
+        </div>
         <Testimonials />
     </div>
   );

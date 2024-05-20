@@ -1,7 +1,5 @@
 "use client";
 import serviceoverviewdata from "@/data/serviceoverviewdata"
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
@@ -20,9 +18,9 @@ const RightContentServiceOverview: React.FC = () => {
                                 height={80}
                                 className=" bg-dspBlack p-5 rounded-full"
                             />
-                            <h3 className="text-[40px] font-dmSans font-medium max-sm:text-pXXL">{item.title}</h3>
-                            <p className="line-clamp-2">{item.description}</p>
-                            <button className="underline max-sm:text-pMd hover:scale-110 transition-all ease flex items-center gap-2 font-bold" onClick={() => router.push(item.urlTo)}>Learn More <FontAwesomeIcon icon={faArrowRightLong} className="icon bg-dspLimeGreen text-dspBlack p-2 text-pXL rounded-full" /></button>
+                            <h3 className="lg:text-[40px] font-dmSans font-medium text-pXXL">{item.title}</h3>
+                            <p className="line-clamp-3">{item.description}</p>
+                            <button className="underline text-pMd hover:scale-110 transition-all ease flex items-center gap-2 font-bold" onClick={() => router.push(item.urlTo)}>Learn More <i className="ri-arrow-right-line bg-dspLimeGreen text-dspBlack py-1 px-2 text-pXL rounded-full"></i></button>
                         </div>
                     )
                 })}

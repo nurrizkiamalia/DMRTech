@@ -1,6 +1,6 @@
 interface SubtitleProps{
     className?: string;
-    children?: string;
+    children?: string | string[];
 }
 
 const SubTitle: React.FC<SubtitleProps> = ({className, children}) =>{

@@ -4,38 +4,45 @@ import Image from "next/image"
 import linkedin from "@/public/assets/icon-linkedin.png"
 import twitter from "@/public/assets/icon-twitter.png"
 import { useRouter } from "next/navigation"
-import Testimonial from "@/types/Testimonial";
+import testimonialdata from "@/data/testimonialdata";
 
-interface CardTestimonialProps{
-    data: Testimonial[];
-    percentage: number;
-}
 
-const CardTestimonial: React.FC<CardTestimonialProps> = ({ data, percentage }) => {
-    const visibleData = data.slice(0, Math.ceil(data.length * (percentage / 100)));
+const CardTestimonial: React.FC = () => {
 
     const router = useRouter()
 
     return(
         <>
-            {visibleData.map((item) => {
+        <div className="flex 2xl:gap-10 gap-5 py-5">
+
+            {testimonialdata.map((item) => {
                 return(
-                    <div className="w-[288px] max-xl:w-full flex flex-col gap-2 my-10 first:mt-0 last:mb-0 border-[3px] border-white bg-dspBlack py-[24px] px-[30px] rounded-3xl" key={item.name}>
-                        <div className="w-[100px] h-[100px] bg-dspLightGray rounded-full self-center mb-5 ">
-                            <Image 
-                                src={`/assets/${item.avatar}`}
-                                alt="avatar"
-                                width={140}
-                                height={140}
-                                className=" bg-dspBlack p-5 rounded-full"
-                            />    
+                    <div className="w-[350px] h-fit 2xl:mr-3 2xl:first:ml-10 mr-1 first:ml-5 border-4 border-dspBlack shadow-lg shadow-gray-800 text-white bg-dspGray py-[24px] px-[30px] rounded-3xl" key={item.name}>
+                        <div className="flex items-center gap-5" >
+                            <div className="w-[80px] h-[80px] border-black rounded-full  ">
+                                <Image 
+                                    src={`/assets/${item.avatar}`}
+                                    alt="avatar"
+                                    width={80}
+                                    height={80}
+                                    className="object-cover rounded-full"
+                                />    
+                            </div>
+                            <div>    
+                                <p className="font-dmBricolage text-pLg font-semibold">—{item.name}</p>
+                                <p className="font-dmBricolage text-pSm italic ">{item.job}</p>
+                            </div>
                         </div>
-                            <p className="font-dmBricolage text-pLg font-semibold">—{item.name}</p>
-                            <p className="font-dmBricolage text-pSm italic mb-6 ">{item.job}</p>
-                            <hr />
-                            <p className="font-raleway text-pSm line-clamp-4 mt-6 mb-4 ">{item.testimonial} </p>
-                            <div className="flex gap-2">
-                                <button onClick={() => router.push(item.linkedin)} className="bg-dspLightGray p-2 rounded-full">
+                            
+                        <p className="font-raleway text-pSm h-fit line-clamp-4 my-4 bg-black p-5 rounded-3xl ">{item.testimonial} </p>
+                        <div className="flex mt-4 items-center justify-between">
+                            <div>
+                                {Array.from({ length: item.star }, (_, index) => (
+                                    <i key={index} className="ri-star-fill text-orange-500 text-pXXL "></i>
+                                ))}
+                            </div>
+                            <div className="flex gap-2 items-center justify-between">
+                                <button onClick={() => router.push(item.linkedin)} className="bg-dspLightGray hover:bg-dspLimeGreen p-2 rounded-full">
                                     <Image 
                                         src={linkedin}
                                         alt="linkedin"
@@ -43,7 +50,7 @@ const CardTestimonial: React.FC<CardTestimonialProps> = ({ data, percentage }) =
                                         className=" hover:scale-90"
                                     />
                                 </button>
-                                <button onClick={() => router.push(item.twitter)} className="bg-dspLightGray p-2 rounded-full">
+                                <button onClick={() => router.push(item.twitter)} className="bg-dspLightGray hover:bg-dspLimeGreen p-2 rounded-full">
                                     <Image 
                                         src={twitter}
                                         alt="twitter"
@@ -53,8 +60,10 @@ const CardTestimonial: React.FC<CardTestimonialProps> = ({ data, percentage }) =
                                 </button>
                             </div>
                         </div>
+                    </div>
                     )
             })}
+        </div>
         </>
     )
 }

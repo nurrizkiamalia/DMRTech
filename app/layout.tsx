@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Raleway, Bricolage_Grotesque} from "next/font/google";
 import "./globals.css";
 import MainHeader from "@/components/Header/MainHeader";
-import SocialMedia from "@/components/SocialMedia";
-import Footer from "@/components/Footer/page";
+import Footer from "@/components/Footer/Footer";
 
 const dmSans = DM_Sans({ 
   subsets: ["latin"],
@@ -37,10 +36,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-dspBlack overflow-x-hidden w-screen" suppressHydrationWarning={true}>
+    <html lang="en" className="bg-black overflow-x-hidden w-full">
+      <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+      </head>
       <body className={`${dmSans.variable} ${bricolage.variable} ${raleway.variable} text-white`} suppressHydrationWarning={true}>
         <MainHeader />
-        <SocialMedia />
         {children}
         <Footer />
       </body>

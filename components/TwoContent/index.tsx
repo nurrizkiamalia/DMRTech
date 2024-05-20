@@ -8,7 +8,8 @@ interface TwoContents {
 const TwoContent: React.FC<TwoContents> = ({children, className}) => {
     return(
         <>
-            <div className={` grid grid-cols-2 py-14 px-20 max-xl:grid-cols-1 max-lg:gap-20 max-xl:px-14 max-lg:px-10 max-sm:px-5 ${className}`}>{children}</div>
+            <div className={` grid grid-cols-1 xl:gap-20 gap-10 py-14 xl:grid-cols-2 xl:px-20 lg:px-14 md:px-10 px-5 ${className}`}>  {children}
+            </div>
         </>
     )
 }
