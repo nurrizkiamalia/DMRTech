@@ -1,17 +1,17 @@
 export default [
     {
-        title: "How we here",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse est  est, dapibus molestie elit non, porttitor rhoncus mi. Nam sagittis  fringilla commodo. Integer faucibus turpis sed ipsum fringilla accumsan.  Vivamus a nulla vel metus auctor scelerisque id vel nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-        image: "team-img4.webp"
+        title: "Our Journey",
+        description: "Founded in 2018, our company began with a vision to transform the tech industry. Our journey has been marked by milestones.",
+        image: "team-img8.webp"
     },
     {
-        title: "Perfect team work",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse est  est, dapibus molestie elit non, porttitor rhoncus mi. Nam sagittis  fringilla commodo. Integer faucibus turpis sed ipsum fringilla accumsan.  Vivamus a nulla vel metus auctor scelerisque id vel nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-        image: "team-img5.webp"
+        title: "Our Team",
+        description: "Our team is our greatest asset. Comprising talented professionals from diverse backgrounds, we bring together a wealth of experience and expertise.",
+        image: "team-img7.webp"
     },
     {
-        title: "Company culture",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse est  est, dapibus molestie elit non, porttitor rhoncus mi. Nam sagittis  fringilla commodo. Integer faucibus turpis sed ipsum fringilla accumsan.  Vivamus a nulla vel metus auctor scelerisque id vel nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-        image: "team-img4.webp"
+        title: "Our Culture",
+        description: "Our company culture is built on the principles of innovation, integrity, and customer-centricity.",
+        image: "team-img3.webp"
     }
-]
+];

@@ -5,7 +5,7 @@ import CompanyEnvirontment from "./CompanyEnvirontment";
 const CompanyCulture: React.FC = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center xl:py-14 xl:px-20 lg:px-14 md:px-10 py-10 px-5">
+      <div className="flex flex-col justify-center items-center xl:py-14 xl:px-20 lg:px-14 md:px-10 py-10 px-5" id="culture">
         <div className=" h-full ">
           <div className="  grid grid-cols-1 lg:grid-cols-2 lg:gap-5 gap-2 items-start">
             <SubTitle className="col-start-1 w-fit">

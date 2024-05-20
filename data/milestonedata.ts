@@ -2,7 +2,7 @@ export default [
     {
         yearachievement: "2018",
         title: "Inception and Vision",
-        explanation: "Our journey began in 2018 with a vision to revolutionize the tech industry. Our founders, Jane Doe and John Smith, started the company with a mission to deliver cutting-edge technology solutions tailored to meet the needs of modern businesses. Their combined experience and passion for innovation laid the foundation for what would become a leading provider of web development and digital solutions."
+        explanation: "Our journey began in 2018 with a vision to revolutionize the tech industry. Our founders, started the company with a mission to deliver cutting-edge technology solutions tailored to meet the needs of modern businesses. Their combined experience and passion for innovation laid the foundation for what would become a leading provider of web development and digital solutions."
     },
     {
         yearachievement: "2019",

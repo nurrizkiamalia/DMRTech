@@ -50,10 +50,10 @@ html{
     animation: verticalScroll 35s linear infinite;
 }
 
-.team .swiper-pagination{
-    background-color: #1f1f1f;
+.team .swiper-pagination, .service .swiper-pagination{
     width: fit-content!important;
     margin: 0 auto;
+    font-size: 35px;
     padding: 20px;
     border-radius: 20px;
     position: relative!important;
@@ -66,6 +66,27 @@ html{
 
 .swiper-pagination-bullet .swiper-pagination-bullet-active{
     background: #4045C1!important;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    position: relative;
+    background-color: black;
+    color: #C3FF62;
+    border-width: 1px;
+    border-color: #fff;
+    padding: 5px 20px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    color: #0F0F0F;
+    background-color: #4045C1;
+    border-color: black;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-button-prev::after, .swiper-button-next::after{
+    font-size: 22px!important;
+    
 }
 
 @keyframes verticalScroll {

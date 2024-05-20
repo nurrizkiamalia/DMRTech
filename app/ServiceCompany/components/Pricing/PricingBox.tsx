@@ -2,11 +2,11 @@ import pricingdata from "@/data/pricingdata"
 
 const PricingBox: React.FC = () => {
 
-    const pricingBoxStyle = "bg-white text-black hover:bg-dspBlack hover:text-white hover:shadow-2xl hover:border-[1px] hover:border-white hover:shadow-gray-700 hover:scale-105 transition-all ease-in-out shadow-lg shadow-gray-800 p-5 rounded-3xl flex flex-col gap-2 lg:gap-5 relative justify-between"
+    const pricingBoxStyle = "bg-dspGray hover:bg-dspBlack hover:text-white hover:shadow-2xl border-[1px] border-dspLightGray hover:border-white hover:shadow-gray-700 hover:scale-105 transition-all ease-in-out shadow-lg shadow-gray-800 p-5 rounded-3xl flex flex-col gap-2 lg:gap-5 even:bg-dspBlack relative justify-between"
 
     return(
         <>
-            <div className="grid grid-cols-1 lg:grid-cols-3 font-raleway gap-5">
+            <div className="grid grid-cols-1  lg:grid-cols-3 font-raleway gap-5">
                 {pricingdata.map((item, index) => (
                     <div key={index} className={`pricing-box ${pricingBoxStyle} `}>
                         <div className={` ${item.popular === true ? "block" : "hidden"} bg-dspPurple w-fit p-2 absolute top-10 -right-2`}>
@@ -16,14 +16,14 @@ const PricingBox: React.FC = () => {
                             <i className="ri-sparkling-2-fill bg-dspLimeGreen p-3 rounded-full text-dspPurple text-heading3"></i>
                             <h2 className="text-pXL mt-5 lg:text-pXXL xl:text-heading3 font-dmBricolage font-bold" >{item.title}</h2>
                             <p className="text-pXL font-light">{item.bestFor}</p>
-                            <p className="text-pXXL xl:text-heading3 font-bold " >${item.price} <span className="text-pSm md:text-pMd font-normal text-gray-400 ">/ Per {item.page} </span></p>
+                            <p className="text-pXXL xl:text-heading3 font-bold " >${item.price} <span className="text-pSm md:text-pMd font-normal text-gray-300 ">/ Per {item.page} </span></p>
                         </div>
                         <hr className="border-gray-600" />
                         <div className="flex flex-col gap-3 justify-between">
                             <p className=" text-pXXL font-semibold">Feature</p>
                             <ul className="flex flex-col gap-3 mb-5">
                                 {item.features.map((feature, indexFeature) => (
-                                    <li key={indexFeature} className="font-raleway text-pSm md:text-pMd flex text-gray-400 gap-2"><i className="ri-focus-fill text-dspPurple"></i> {feature}</li>
+                                    <li key={indexFeature} className="font-raleway text-pSm md:text-pMd flex text-gray-300 gap-2"><i className="ri-focus-fill text-dspPurple"></i> {feature}</li>
                                 ))}
                             </ul>
                         </div>

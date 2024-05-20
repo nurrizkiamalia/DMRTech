@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
                         width={800}
                         height={500}
                         alt="image"
-                        className=" absolute h-[300px] xl:h-[500px] hover:scale-110 rounded-3xl transition-all ease-linear object-cover "/>
+                        className=" absolute h-[300px] xl:h-[500px] hover:scale-110 rounded-3xl transition-all ease-linear object-cover object-center "/>
                         <div className="icon">
 
                         </div>

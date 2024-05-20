@@ -12,8 +12,8 @@ const About: React.FC = () =>{
             
             <AboutUs />
             <StatisticCompany />
-            <VisionMission />
             <Milestone />
+            <VisionMission />
             <OurTeam />
             <CompanyCulture />
         </div>

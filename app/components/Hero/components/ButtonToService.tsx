@@ -8,7 +8,7 @@ const ButtonToServiceOverview: React.FC = () => {
     return(
         <>
             <div>
-                <Button onCLick={() => router.push("/")}>
+                <Button onCLick={() => router.push("/ServiceCompany")}>
                     What we do
                 </Button>
             </div>

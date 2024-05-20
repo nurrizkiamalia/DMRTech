@@ -3,7 +3,7 @@ import { title } from "process";
 export default [
     {
         subtitle: "visionary goals",
-        title: "Shaping the Future with Innovation and Excellency",
+        title: "Shaping the Future with Innovation",
         content: [
             {
                 title: "Creative Excellence",

@@ -25,7 +25,7 @@ const ResponsiveHeader: React.FC<ResponsiveProps> = ({className}) =>{
                 </div>
 
             {menuShow && (
-                <div className="menu-open px-5 xl:px-[60px] xl:pl-[97px] z-99 h-screen right-0 top-0 md:w-[50vw] w-screen bg-dspBlack hover:bg-dspPurple border-l-[3px] border-white hover:text-white flex flex-col items-start fixed justify-between ">
+                <div className="menu-open px-5 xl:px-[60px] xl:pl-[97px] z-99 h-screen right-0 top-0 md:w-[50vw] w-screen bg-dspBlack hover:bg-dspPurple border-l-[3px] border-white hover:text-white flex flex-col items-start gap-20 fixed justify-start ">
                     <button className=" hover:bg-dspLimeGreen hover:text-black self-end border-2 border-offwhite px-8 py-5 rounded-full cursor-pointer hover:bg-offwhite hover:shadow-lg hover:shadow-gray " onClick={handleMenuOpen}>x</button>
                     <div className="menu-nav">
                         <NavList onClick={handleMenuOpen} className=" flex flex-col -mt-10 text-pXXL md:text-[30px] lg:text-heading3 " />

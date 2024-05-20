@@ -7,7 +7,7 @@ interface classnaming{
 }
 
 const NavList: React.FC<classnaming> = ({className, onClick}) =>{
-    const styleLink = "hover:scale-105 transition-all ease-in-out hover:text-dspLimeGreen"
+    const styleLink = "hover:scale-105 transition-all ease-in-out hover:text-dspLimeGreen active:text-dspLimeGreen focus:text-dspLimeGreen"
 
     return(
         <>

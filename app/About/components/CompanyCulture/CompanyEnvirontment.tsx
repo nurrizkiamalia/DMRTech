@@ -1,18 +1,20 @@
 "use client";
 
 import Image from "next/image"
-import team1 from "@/public/assets/team-img4.webp"
-import team2 from "@/public/assets/team-img5.webp"
+import office1 from "@/public/assets/office1.webp"
+import office3 from "@/public/assets/team-img5.webp"
+import office2 from "@/public/assets/office3.webp"
+import office4 from "@/public/assets/team-img1.webp"
 import { useState } from "react"
 
 const imagesRow1 = [
-    team1,
-    team2,
+    office1,
+    office2,
 ];
 
 const imagesRow2 = [
-    team2,
-    team1,
+    office3,
+    office4,
 ];
 
 const CompanyEnvirontment: React.FC = () => {
@@ -43,14 +45,14 @@ const CompanyEnvirontment: React.FC = () => {
                 <Image
                   src={src}
                   alt={`image-row1-${index}`}
-                  className=" object-cover rounded-3xl h-[300px] lg:h-[400px] "
+                  className=" object-cover rounded-3xl h-[300px] lg:h-[350px] "
                 />
               </div>
             ))}
           </div>
         </div>
         <div className="h-full flex items-center justify-center">
-          <div className="relative flex h-full w-full gap-3 items-stretch justify-between">
+          <div className="relative flex h-[60%] w-full gap-3 items-stretch justify-between">
             {imagesRow2.map((src, index) => (
               <div
                 key={index}
@@ -62,7 +64,7 @@ const CompanyEnvirontment: React.FC = () => {
                 <Image
                   src={src}
                   alt={`image-row2-${index}`}
-                  className=" object-cover rounded-3xl h-[300px]"
+                  className=" object-cover rounded-3xl h-[350px]"
                 />
               </div>
             ))}

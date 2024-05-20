@@ -12,19 +12,16 @@ const VisionMission: React.FC = () => {
     return (
       <>
       <Swiper
-        direction={'vertical'}
-        pagination={{
-            clickable: true,
-        }}
+        pagination={true}
         modules={[Pagination]}
-        className="mySwiper h-[140vh] sm:h-[120vh] md:h-[100vh] xl:h-[110vh] 2xl:h-screen "
+        className="mySwiper h-fit "
       >
         {visiondata.map((item, index) => (
           <SwiperSlide
             key={index}
-            className="flex flex-col justify-center xl:py-14 xl:px-20 lg:px-14 md:px-10 py-10 px-5"
+            className="flex h-fit flex-col justify-center xl:py-14 xl:px-20 lg:px-14 md:px-10 py-10 px-5"
           >
-            <div className=" h-[140vh] sm:h-[120vh] md:h-[100vh] xl:h-[110vh] 2xl:h-screen ">
+            <div className="h-fit ">
                 <div className="  grid grid-cols-1 lg:grid-cols-2 lg:gap-5 gap-2 items-start">
                 <SubTitle className="col-start-1 w-fit">
                     # {item.subtitle}{" "}

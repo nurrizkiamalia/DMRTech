@@ -1,8 +1,9 @@
 "use client";
 
 import Image from 'next/image'
-import image4 from '@/public/assets/team-img4.webp'
-import image5 from '@/public/assets/team-img5.webp'
+import image1 from '@/public/assets/website2.webp'
+import image2 from '@/public/assets/hero-img.webp'
+import image3 from '@/public/assets/website.webp'
 import { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -10,9 +11,9 @@ import 'swiper/css/navigation'
 import { Navigation } from 'swiper/modules'
 
 const images = [
-    image4,
-    image5,
-    image4,
+    image1,
+    image2,
+    image3,
 ];
 
 const RightContentHero: React.FC = () => {

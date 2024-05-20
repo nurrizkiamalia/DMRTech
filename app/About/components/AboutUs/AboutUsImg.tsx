@@ -2,12 +2,12 @@
 
 import { useState } from "react"
 import Image from 'next/image'
-import image4 from '@/public/assets/team-img4.webp'
-import image5 from '@/public/assets/team-img5.webp'
+import image1 from '@/public/assets/team-img6.webp'
+import image2 from '@/public/assets/team-img3.webp'
 
 const images = [
-    image4,
-    image5,
+    image1,
+    image2,
 ]
 
 
