@@ -46,8 +46,8 @@ const Team: React.FC = () =>{
                             </div>
                             </>
                         )}
-                        <div className=" flex flex-col gap-5 pt-0 p-5"> 
-                            <p className="w-fit text-pLg ">{data.experience}</p>
+                        <div className=" flex flex-col p-5 gap-5"> 
+                            <p className="w-fit text-pLg line-clamp-5 ">{data.experience}</p>
                             <div className="flex gap-5">
                                 <div className="bg-dspGray rounded-full  p-3 hover:bg-dspLightGray cursor-pointer">    
                                     <Link href="https://linkedin.com">
