@@ -1,6 +1,7 @@
 import pricingdata from "@/data/pricingdata";
 import Image from "next/image";
 import spark from "@/public/assets/sparkling-2-fill.svg";
+import Link from "next/link";
 
 const PricingBox: React.FC = () => {
   const pricingBoxStyle =
@@ -55,9 +56,9 @@ const PricingBox: React.FC = () => {
                 ))}
               </ul>
             </div>
-            <button className="border-2 bg-dspLimeGreen border-black hover:border-dspLimeGreen py-3 rounded-3xl text-black font-bold hover:bg-dspBlack hover:text-white ">
+            <Link href={`https://wa.me/6289643168821?text=Halo%20Amalia%2C%0D%0ASaya%20ingin%20tahu%20tentang%20service%${item.title}`} className="border-2 bg-dspLimeGreen border-black hover:border-dspLimeGreen p-3 text-center rounded-3xl text-black font-bold hover:bg-dspBlack hover:text-white ">
               Start with {item.title}
-            </button>
+            </Link>
           </div>
         ))}
       </div>
