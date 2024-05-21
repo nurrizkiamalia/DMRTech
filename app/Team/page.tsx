@@ -26,17 +26,15 @@ const Team: React.FC = () =>{
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 team-box">
                     {teamsdata.map((data, index) => (
-                        <div key={index} className=" shadow-shadowStripe team-member rounded-3xl flex flex-col gap-2 items-start bg-dspBlack text-white   ">
+                        <div key={index} className=" shadow-shadowStripe team-member rounded-3xl pt-10 flex flex-col gap-2 items-start bg-dspBlack text-white   ">
                         {teamData[index] && (
                             <>
                             <Image
                                 src={teamData[index].picture.large}
                                 alt={`${teamData[index].name.first} ${teamData[index].name.last}'s picture`}
-                                width={400}
+                                width={200}
                                 height={200}
-                                objectFit="cover"
-                                objectPosition="center"
-                                className="rounded-3xl self-center "
+                                className="rounded-full self-center "
                             />
                             <div className="p-5 w-full">
                                 <div className="bg-dspLimeGreen shadow-lg shadow-gray-800 w-full p-5 text-black rounded-3xl">    

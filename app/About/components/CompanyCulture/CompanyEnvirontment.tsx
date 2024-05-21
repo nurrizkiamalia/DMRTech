@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image"
-import office1 from "@/public/assets/office1.webp"
+import office1 from "@/public/assets/team-img8.webp"
 import office3 from "@/public/assets/team-img5.webp"
 import office2 from "@/public/assets/office3.webp"
 import office4 from "@/public/assets/team-img1.webp"
@@ -45,7 +45,9 @@ const CompanyEnvirontment: React.FC = () => {
                 <Image
                   src={src}
                   alt={`image-row1-${index}`}
-                  className=" object-cover rounded-3xl h-[300px] lg:h-[350px] "
+                  height={500}
+                  width={500}
+                  className=" object-cover rounded-3xl"
                 />
               </div>
             ))}
@@ -64,6 +66,8 @@ const CompanyEnvirontment: React.FC = () => {
                 <Image
                   src={src}
                   alt={`image-row2-${index}`}
+                  height={500}
+                  width={500}
                   className=" object-cover rounded-3xl h-[350px]"
                 />
               </div>

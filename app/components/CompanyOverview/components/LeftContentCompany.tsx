@@ -1,4 +1,6 @@
 import Image from "next/image"
+
+import arrow from "@/public/assets/arrow-right-up-line.svg"
 import companyoverviewdata from "@/data/companyoverviewdata"
 import Link from "next/link"
 
@@ -23,8 +25,13 @@ const LeftContentCompany: React.FC = () => {
                         height={200}
                         className="h-[200px] object-cover object-center rounded-3xl"
                     />
-                    <Link href={`/About/#${linkToId[index]}`} className="-mt-16 rounded-full self-end py-5 px-3 bg-dspBlack">
-                        <i className="ri-arrow-right-up-line hover:bg-dspLimeGreen text-black text-heading3 p-5 bg-white rounded-full"></i>
+                    <Link href={`/About/#${linkToId[index]}`} className="-mt-16 rounded-full self-end pt-4 px-3 bg-dspBlack">
+                        <Image
+                        src={arrow}
+                        alt="arrow"
+                        width={100}
+                        height={100}
+                        className="bg-white hover:bg-dspLimeGreen rounded-full"/>  
                     </Link>
                 </div>
             ))}

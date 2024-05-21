@@ -37,9 +37,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-black overflow-x-hidden w-full">
-      <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
-      </head>
       <body className={`${dmSans.variable} ${bricolage.variable} ${raleway.variable} text-white`} suppressHydrationWarning={true}>
         <MainHeader />
         {children}

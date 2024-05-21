@@ -56,7 +56,8 @@ const RightContentHero: React.FC = () => {
                                     src={src} 
                                     alt={`image-${index}`}
                                     className='object-cover rounded-3xl hover:scale-110 transition-all ease-linear'
-                                    layout='fill'
+                                    width={500}
+                                    height={400}
                                     priority={index === 0}
                                 />
                             </div>

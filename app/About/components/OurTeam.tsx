@@ -55,17 +55,15 @@ const OurTeam: React.FC = () => {
                 index <= 5 ? "block" : "!hidden"
               } team-member px-5 py-3 h-full  `}
             >
-              <div className="rounded-3xl bg-dspGray shadow-md flex  flex-col gap-5 items-center shadow-gray-800 pb-5">
+              <div className="rounded-3xl bg-dspGray shadow-md flex  flex-col gap-5 items-center shadow-gray-800 py-5">
                 {teamData[index] && (
                   <>
                     <Image
                       src={teamData[index].picture.large}
                       alt={`${teamData[index].name.first} ${teamData[index].name.last}'s picture`}
-                      width={400}
+                      width={200}
                       height={200}
-                      objectFit="cover"
-                      objectPosition="center"
-                      className="rounded-3xl self-center"
+                      className="rounded-full self-center"
                     />
                     <div className="p-5 w-full">
                       <div className=" w-full flex flex-col bg-dspBlack p-3 mb-5 rounded-3xl ">
