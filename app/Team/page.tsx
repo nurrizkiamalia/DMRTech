@@ -13,18 +13,18 @@ const Team: React.FC = () =>{
 
     return(
         <>
-            <div className=" grid grid-cols-1 gap-5 xl:grid-cols-3 team pt-[20vh] py-14 px-20 max-xl:px-14 max-lg:px-10 max-sm:px-5 font-raleway relative h-full">
-                <div className=" xl:sticky relative xl:top-28 h-fit z-[1] xl:col-span-1 flex flex-col gap-5 max-md:gap-2 items-start">
+            <div className="flex gap-10 flex-col team pt-[20vh] py-14 px-20 max-xl:px-14 max-lg:px-10 max-sm:px-5 font-raleway relative h-full">
+                <div className=" relative h-fit z-[1] flex flex-col gap-5 max-md:gap-2 items-start">
                     <SubTitle># Full Team Here!</SubTitle>
                     <h2 className="text-heading2 max-lg:text-heading3 max-md:text-pXXL font-dmBricolage font-semibold mb-5 max-md:mb-2">Our Team</h2>
                     <p className="text-pLg md:text-pXL xl:text-pXXL text-gray-300">The people behind our great works.</p>
                 </div>
-                <div className="xl:col-start-2 xl:col-span-3 flex flex-col gap-5 xl:gap-10">
+                <div className=" flex flex-col gap-5 xl:gap-10">
                     <div className="flex flex-col gap-5">
                         <hr className="w-[50px] border-2 rounded-full " />
                         <p className="text-pSm md:text-pLg xl:text-pXL text-gray-300">At DMRTech, we are proud to have a diverse and talented team of professionals dedicated to delivering top-notch web development services. Our team consists of experts in front end and back end development, UI/UX design, brand and product design, and search engine optimization..</p>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 team-box">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 team-box">
                     {teamsdata.map((data, index) => (
                         <div key={index} className=" shadow-shadowStripe team-member rounded-3xl pt-10 flex flex-col gap-2 items-start bg-dspBlack text-white   ">
                         {teamData[index] && (
