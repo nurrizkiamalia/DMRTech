@@ -2,7 +2,7 @@ export default [
     {
         service: "Web Development",
         explanation: "Our web development service focuses on creating high-performance websites and web applications that are both functional and visually appealing. We cover both front-end and back-end development to ensure a seamless user experience and robust performance. Our team of expert developers uses the latest technologies and frameworks to build scalable, secure, and responsive websites. From initial concept to final deployment, we work closely with our clients to understand their unique needs and deliver custom solutions that drive results.",
-        image: "website2.webp",
+        image: "website3.webp",
         tools: [
             { name: "Next.js", icon: "icon-nextjs.webp" },
             { name: "React", icon: "icon-react.webp" },
