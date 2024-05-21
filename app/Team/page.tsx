@@ -22,9 +22,9 @@ const Team: React.FC = () =>{
                 <div className="xl:col-start-2 xl:col-span-3 flex flex-col gap-5 xl:gap-10">
                     <div className="flex flex-col gap-5">
                         <hr className="w-[50px] border-2 rounded-full " />
-                        <p className="text-pSm md:text-pLg xl:text-pXL text-gray-300">At DMRTech, we are proud to have a diverse and talented team of professionals dedicated to delivering top-notch web development services. Our team consists of experts in front end and back end development, UI/UX design, brand and product design, and search engine optimization. <br /> <br /> Each member brings a wealth of experience and a passion for excellence, ensuring that we provide innovative solutions and exceptional results for our clients. Meet the brilliant minds behind our success and discover how their unique skills contribute to making your projects a reality.</p>
+                        <p className="text-pSm md:text-pLg xl:text-pXL text-gray-300">At DMRTech, we are proud to have a diverse and talented team of professionals dedicated to delivering top-notch web development services. Our team consists of experts in front end and back end development, UI/UX design, brand and product design, and search engine optimization..</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 team-box">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 team-box">
                     {teamsdata.map((data, index) => (
                         <div key={index} className=" shadow-shadowStripe team-member rounded-3xl flex flex-col gap-2 items-start bg-dspBlack text-white   ">
                         {teamData[index] && (

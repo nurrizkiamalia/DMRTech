@@ -18,7 +18,7 @@ const Milestone: React.FC = () => {
             Our Milestone
           </h2>
           <p className="col-start-1 font-raleway text-pL">
-          Explore the key milestones that have shaped our journey. From our founding and first major project to international expansion and industry recognition, these achievements highlight our commitment to innovation and excellence. Each milestone represents a step forward in our mission to deliver cutting-edge solutions and drive client success.
+          Explore the key milestones that have shaped our journey. Each milestone represents a step forward in our mission to deliver cutting-edge solutions and drive client success.
           </p>
         </div>
         <div className="grid bg-dspGray rounded-3xl grid-cols-1 lg:gap-10">

@@ -13,10 +13,8 @@ const Projects: React.FC = () => {
                         width={800}
                         height={500}
                         alt="image"
-                        className=" absolute h-[300px] xl:h-[500px] hover:scale-110 rounded-3xl transition-all ease-linear object-cover object-center "/>
-                        <div className="icon">
-
-                        </div>
+                        className=" absolute h-[300px] xl:h-[500px] hover:scale-110 rounded-3xl transition-all ease-linear object-cover object-center "
+                        priority/>
                     </div>
                     <div className="flex flex-col lg:flex-row justify-between items-center pt-2 px-5">
                         <h2 className=" cursor-alias hover:scale-105 transition-all ease-in-out hover:text-dspLimeGreen font-dmBricolage font-bold text-pXL xl:text-pXXL">{item.title}</h2>

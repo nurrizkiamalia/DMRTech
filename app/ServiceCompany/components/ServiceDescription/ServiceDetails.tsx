@@ -41,7 +41,8 @@ const ServiceDetails: React.FC = () => {
                   height={800}
                   objectPosition="bottom"
                   alt="service-image"
-                  className="h-full w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-3xl mix-blend-darken bg-black opacity-30"
+                  className=" h-full w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 rounded-3xl mix-blend-darken bg-black opacity-30"
+                  priority
                 />
               </div>
               <div className="z-10 py-10 relative w-full h-full flex flex-col items-center justify-start">
