@@ -36,7 +36,7 @@ const ServiceDetails: React.FC = () => {
               <div className=" w-full h-full -z-10 ">
                 <Image
                   src={`/assets/${item.image}`}
-                  width={800}
+                  width={500}
                   height={500}
                   alt="service-image"
                   className=" rounded-3xl "
@@ -48,9 +48,9 @@ const ServiceDetails: React.FC = () => {
                   priority
                 />
               </div>
-              <div className="z-10 py-10 relative w-full h-full flex flex-col items-center justify-start">
+              <div className="z-10 lg:py-10 relative w-full h-full flex flex-col items-center justify-start">
                 <div className="font-raleway text-left px-4 max-w-4xl flex flex-col gap-5">
-                  <h3 className="text-white text-pXL md:text-pXXL xl:text-heading3 font-bold mb-4 p-3 rounded-3xl w-full">
+                  <h3 className="text-white text-pXL md:text-pXXL xl:text-heading3 font-bold lg:mb-4 p-3 rounded-3xl w-full">
                     {item.service}
                   </h3>
                   <p className="text-pMd md:text-pLg text-dspLightGray mb-4">
