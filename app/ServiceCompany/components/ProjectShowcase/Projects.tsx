@@ -13,12 +13,12 @@ const Projects: React.FC = () => {
                         width={500}
                         height={500}
                         alt="image"
-                        className=" absolute hover:scale-110 rounded-3xl transition-all ease-linear"
+                        className=" hover:scale-110 rounded-3xl transition-all ease-linear"
                         style={{
                             height: "100%",
                             width: "100%"
                         }}
-                        priority/>
+                        priority={false} />
                     </div>
                     <div className="flex flex-col lg:flex-row justify-between items-center pt-2 px-5">
                         <h2 className=" cursor-alias hover:scale-105 transition-all ease-in-out hover:text-dspLimeGreen font-dmBricolage font-bold text-pXL xl:text-pXXL">{item.title}</h2>
