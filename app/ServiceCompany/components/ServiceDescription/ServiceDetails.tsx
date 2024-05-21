@@ -32,14 +32,14 @@ const ServiceDetails: React.FC = () => {
       >
         {servicedata.map((item, index) => (
           <SwiperSlide key={index} className="service" id={idName[index]}>
-            <div className="relative w-full h-full grid grid-cols-1 lg:grid-cols-2">
+            <div className="relative w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-5">
               <div className=" w-full h-full -z-10 ">
                 <Image
                   src={`/assets/${item.image}`}
                   width={800}
                   height={500}
                   alt="service-image"
-                  className=" transition-transform duration-500 ease-in-out transform hover:scale-110 mix-blend-darken bg-black opacity-30"
+                  className=" rounded-3xl "
                   style={{
                     height: "100%",
                     width: "100%",
@@ -50,7 +50,7 @@ const ServiceDetails: React.FC = () => {
               </div>
               <div className="z-10 py-10 relative w-full h-full flex flex-col items-center justify-start">
                 <div className="font-raleway text-left px-4 max-w-4xl flex flex-col gap-5">
-                  <h3 className="text-white text-center text-pXL md:text-pXXL xl:text-heading3 font-bold mb-4 border-2 p-3 rounded-3xl border-dspWhite w-full">
+                  <h3 className="text-white text-pXL md:text-pXXL xl:text-heading3 font-bold mb-4 p-3 rounded-3xl w-full">
                     {item.service}
                   </h3>
                   <p className="text-pMd md:text-pLg text-dspLightGray mb-4">

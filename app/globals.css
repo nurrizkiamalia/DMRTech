@@ -54,10 +54,9 @@ html{
     width: fit-content!important;
     margin: 0 auto;
     font-size: 35px;
-    padding: 20px;
+    padding: 0px;
     border-radius: 20px;
     position: relative!important;
-    margin-top: 2vh;
 }
 
 .swiper-pagination-bullet{
