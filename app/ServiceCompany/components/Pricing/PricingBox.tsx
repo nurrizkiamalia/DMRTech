@@ -56,7 +56,7 @@ const PricingBox: React.FC = () => {
                 ))}
               </ul>
             </div>
-            <Link href={`https://wa.me/6289643168821?text=Halo%20Amalia%2C%0D%0ASaya%20ingin%20tahu%20tentang%20service%${item.title}`} className="border-2 bg-dspLimeGreen border-black hover:border-dspLimeGreen p-3 text-center rounded-3xl text-black font-bold hover:bg-dspBlack hover:text-white ">
+            <Link href={`https://wa.me/6289643168821?text=Halo%20Amalia%2C%0D%0ASaya%20ingin%20tahu%20tentang%20service%20${item.title}`} className="border-2 bg-dspLimeGreen border-black hover:border-dspLimeGreen p-3 text-center rounded-3xl text-black font-bold hover:bg-dspBlack hover:text-white ">
               Start with {item.title}
             </Link>
           </div>
