@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from 'next/image'
-import image1 from '@/public/assets/team-img5.webp'
+import image1 from '@/public/assets/team-img7.webp'
 import image2 from '@/public/assets/team-img3.webp'
 
 const images = [
@@ -31,7 +31,11 @@ const AboutUsImg: React.FC = () => {
                     <Image 
                         src={src} 
                         alt={`image-${index}`}
-                        className=' object-cover rounded-3xl h-[300px] lg:h-[400px] xl:h-[500px] '
+                        className=' object-cover rounded-3xl'
+                        style={{
+                            width: "100%",
+                            height: "400px"
+                        }}
                     />
                 </div>
                 ))}

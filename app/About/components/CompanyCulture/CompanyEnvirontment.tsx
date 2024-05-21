@@ -48,6 +48,9 @@ const CompanyEnvirontment: React.FC = () => {
                   height={500}
                   width={500}
                   className=" object-cover rounded-3xl"
+                  style={{
+                    height: "350px"
+                  }}
                 />
               </div>
             ))}
@@ -68,7 +71,10 @@ const CompanyEnvirontment: React.FC = () => {
                   alt={`image-row2-${index}`}
                   height={500}
                   width={500}
-                  className=" object-cover rounded-3xl h-[350px]"
+                  className=" object-cover rounded-3xl"
+                  style={{
+                    height: "350px"
+                  }}
                 />
               </div>
             ))}
